@@ -1,58 +1,74 @@
 <html>
     <head>
-     <title>
-        Basic Registration Form
-     </title>
+        <title>
+            Basic Registration Form
+        </title>
     </head>
-    <body bgcolor="#FFEB3B">
-        <center>
+        <body>
             <form>
-                <div>
-                    <label>ID </label> <input type="text" name="id" required>
-                    <br><br>
-                    <label>FIRST NAME </label> <input type="text" name="firstname" required>
-                    <br><br>
-                    <label>LAST NAME</label> <input type="text" name="lastname" required>
-                </div>
-                <br>
-                <div>
-                    <label>USER NAME </label> <input type="text" name="username" required>
-                    <br><br>
-                    <label>PASS WORD</label> <input type="password" name="password" required>
-                </div>
-                <br>
-                <div>
-                    <label>EMAIL</label> <input type="email" name="email" required>
-                    <br><br>
-                    <label>DATE OF BIRTH</label> <input type="date" name="dob" required>
-                </div>
-                <br>
-                <div>
-                    <label>GENDER</label><br>
-                    <input type="radio" name="gender" value="Male" required> Male
-                    <input type="radio" name="gender" value="Female" required> Female
-                    <input type="radio" name="gender" value="Other" required> Other
-                </div>
-                <br>
-                <div>
-                    <label>DEPARTMENT</label><br>
-                    <select name="department" required>
-                        <option value="EEE">EEE</option>
-                        <option value="CSE">CSE</option>
-                        <option value="BBA">BBA</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label>I agree to the terms and conditions</label>
-                    <input type="checkbox" name="terms" required>
-                </div>
-                <br>
-                <div>
-                    <input type="submit" value="Register">
-                    <input type="reset" value="Reset">
-                </div>
+                <fieldset>
+                    <legend>Basic Registration For</legend>
+                        <table>
+                    <tr>
+                        <td><label>ID</label></td>
+                        <td><input type="text" name="id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>FIRST NAME</label></td>
+                        <td><input type="text" name="firstname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>LAST NAME</label></td>
+                        <td><input type="text" name="lastname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>USER NAME</label></td>
+                        <td><input type="text" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>PASS WORD</label></td>
+                        <td><input type="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>EMAIL</label></td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>DATE OF BIRTH</label></td>
+                        <td><input type="date" name="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>GENDER</label></td>
+                        <td>
+                            <input type="radio" name="gender" value="Male" required> Male
+                            <input type="radio" name="gender" value="Female" required> Female
+                            <input type="radio" name="gender" value="Other" required> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>DEPARTMENT</label></td>
+                        <td>
+                            <select name="department" required>
+                                <option value="EEE">EEE</option>
+                                <option value="CSE">CSE</option>
+                                <option value="BBA">BBA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>I agree to the terms and conditions</label></td>
+                        <td><input type="checkbox" name="terms" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Register">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
             </form>
-        </center>
+        
     </body>
 </html>
