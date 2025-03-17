@@ -7,34 +7,34 @@
         <body>
                 <form>
                     <fieldset>
-                        <legend>Basic Registration For</legend>
+                        <legend>Registration</legend>
                             <table border="0">
                                     <tr>
-                                        <td><label>ID</label></td><td><input type="text" name="id" required></td>
+                                        <td><label>ID</label></td><td><input type="text" name="id" value="" id="id" required></td>
                                     </tr>
                                     <tr>
-                                        <td><label>FIRST NAME</label></td><td><input type="text" name="firstname" required></td>
+                                        <td><label>FIRST NAME</label></td><td><input type="text" name="firstname" value="" id="firstname" required></td>
                                     </tr>
                                     <tr>
-                                        <td><label>LAST NAME</label></td><td><input type="text" name="lastname" required></td>
+                                        <td><label>LAST NAME</label></td><td><input type="text" name="lastname" required value="" id="lastname"</td>
                                     </tr>
                                     <tr>
-                                        <td><label>USER NAME</label></td><td><input type="text" name="username" required></td>
+                                        <td><label>USER NAME</label></td><td><input type="text" name="username" required value="" id="username"</td>
                                     </tr>
                                     <tr>
-                                        <td><label>PASS WORD</label></td><td><input type="password" name="password" required></td>
+                                        <td><label>PASS WORD</label></td><td><input type="password" name="password" required value="" id="password"</td>
                                     </tr>
                                     <tr>
-                                        <td><label>EMAIL</label></td><td><input type="email" name="email" required></td>
+                                        <td><label>EMAIL</label></td><td><input type="email" name="email" required value="" id="email"</td>
                                     </tr>
                                     <tr>
-                                        <td><label>DATE OF BIRTH</label></td><td><input type="date" name="dob" required></td>
+                                        <td><label>DATE OF BIRTH</label></td><td><input type="date" name="dob" required value="" id="dob"</td>
                                     </tr>
                                     <tr>
                                         <td><label>GENDER</label>
-                                        <td><input type="radio" name="gender" value="Male" required> Male
-                                        <input type="radio" name="gender" value="Female" required> Female
-                                        <input type="radio" name="gender" value="Other" required> Other</td>
+                                        <td><input type="radio" name="gender" value="Male" required id="male"> Male
+                                        <input type="radio" name="gender" value="Female" required id="female"> Female
+                                        <input type="radio" name="gender" value="Other" required id="other"> Other</td>
                                         </td>
                                     </tr>
                                     <tr>
@@ -48,12 +48,12 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                    <td></td><td><label>I agree to the terms and conditions</label><input type="checkbox" name="terms" required></td>
+                                    <td></td><td><label>I agree to the terms and conditions</label><input type="checkbox" name="terms" value="" id="terms"required></td>
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                        <input type="submit" value="Register">
-                                        <input type="reset" value="Reset">
+                                            <input type="submit" name=Register value="Register" id="Register">
+                                            <input type="reset"  name=Reset value="Reset" id="Reset">
                                         </td>
                                     </tr>
                             </table>
