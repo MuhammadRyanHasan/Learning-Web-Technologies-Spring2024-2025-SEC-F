@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Degree Checkbox</title>
+</head>
+<body>
+  <form id="form">
+    <fieldset>
+      <legend>Degree</legend>
+      <input type="checkbox" id="ssc" name="degree" value="SSC">
+      <label for="ssc">SSC</label>
+
+      <input type="checkbox" id="hsc" name="degree" value="HSC">
+      <label for="hsc">HSC</label>
+
+      <input type="checkbox" id="bsc" name="degree" value="BSC">
+      <label for="bsc">BSc</label>
+    <br>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+      let ssc = document.getElementById("ssc").checked;
+      let hsc = document.getElementById("hsc").checked;
+      let bsc = document.getElementById("bsc").checked;
+
+      if (!ssc && !hsc && !bsc) {
+        alert("Atleast One Degree Must Be Selected!");
+      } else {
+        let selectedDegrees = [];
+        if (ssc) selectedDegrees.push("SSC");
+        if (hsc) selectedDegrees.push("HSC");
+        if (bsc) selectedDegrees.push("BSc");
+        alert("Selected degrees: " + selectedDegrees.join(", "));
+      }
+    });
+  </script>
+</body>
+</html>
