@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Blood Group Selection</title>
+</head>
+<body>
+  <form id="main">
+    <label>Blood Group</label>
+    <select id="bloodGroup">
+      <option value="">?</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select>
+    <hr>
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    document.getElementById("main").addEventListener("submit", function(event) 
+    {
+      let bloodGroup = document.getElementById("bloodGroup").value;
+      if (!bloodGroup) {
+        alert("Please Select Your Blood Group!");
+      } else 
+      {
+        alert("Your Blood Group is! " + bloodGroup);
+      }
+    });
+  </script>
+</body>
+</html>
