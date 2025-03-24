@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Date of Birth Form</title>
+</head>
+<body>
+<form id="main">
+  <fieldset>
+    <legend><b>Date Of Birth</b></legend>
+    <label>dd</label>
+    <input type="number" id="dd" required> / 
+    <label>mm</label>
+    <input type="number" id="mm" required> / 
+    <label>yyyy</label>
+    <input type="number" id="yyyy" required>
+    <br>
+    <hr>
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("main").addEventListener("submit", function(event) 
+{
+  let dd = document.getElementById("dd").value;
+  let mm = document.getElementById("mm").value;
+  let yyyy = document.getElementById("yyyy").value;
+  let error;
+
+  if (!dd || !mm || !yyyy) {
+  } else if (dd < 1 || dd > 31) {
+    error = "Day Must Be Between 1 and 31.";
+  } else if (mm < 1 || mm > 12) {
+    error = "Month Must Be Between 1 and 12.";
+  } else if (yyyy < 1900 || yyyy > 2016) {
+    error = "Year Must Be Between 1900 and 2016.";
+  }
+  if (error) {
+    alert(error);
+  } else {
+    alert("Date of birth submitted: " + dd + "/" + mm + "/" + yyyy);
+  }
+});
+</script>
+</body>
+</html>
